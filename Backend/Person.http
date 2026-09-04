@@ -1,0 +1,26 @@
+@base_address = http://localhost:3000/api/people
+
+### 
+POST {{base_address}}
+Content-Type: application/json
+
+{
+  "FirstName": "Nada",
+  "LastName": "OD"
+}
+
+### 
+GET {{base_address}}
+
+### 
+PUT {{base_address}}/2
+Content-Type: application/json
+
+{
+  "Id":2,
+  "FirstName": "Nada",
+  "LastName": "OD"
+}
+
+###
+DELETE {{base_address}}/2
